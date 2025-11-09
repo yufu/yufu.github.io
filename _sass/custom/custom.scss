@@ -1,0 +1,33 @@
+/* --- 中文阅读体验优化 --- */
+
+/* 1. 设置字体 (实现截屏中的 "苹方" 或 "微软雅黑" 效果) */
+body {
+  /* 这个字体栈会优先使用 "PingFang SC" (苹方)，
+     这与你截图中的字体一致 */
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei",
+    var(--font-family-system), sans-serif;
+}
+
+/* 2. 设置间隔 (实现截屏中的 "行距" 和 "字距" 效果) */
+.post-content p,
+.post-content li {
+  /* 这就是你看到的 "宽行距" */
+  line-height: 5;
+
+  /* 这就是你看到的 "微字距" */
+  letter-spacing: 0.05em;
+}
+
+
+/*
+* ------------------------------------------------
+* 段落首行缩进 (空两格)
+* ------------------------------------------------
+*/
+.post-content p {
+  /* * text-indent: 2em; 
+  * 'em' 是一个相对单位，1em 等于当前字体大小。
+  * 2em 刚刚好就是两个中文字符的宽度。
+  */
+  text-indent: 2em;
+}

@@ -1,17 +1,31 @@
 ---
-title: Getting Started
+title: Transformer 理解
 description: >-
   Get started with Chirpy basics in this comprehensive overview.
   You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server.
-author: cotes
-date: 2019-08-09 20:55:00 +0800
-categories: [Blogging, Tutorial]
-tags: [getting started]
+author: Yu Fu (付彧)
+date: 2025-11-09 19:23:00 +0800
+categories: [Tech, Deep Learning Algorithm]
+tags: [Transformer, LLM]
 pin: true
-media_subpath: '/posts/20180809'
+math: true
 ---
 
+<p align="center">
+  <img src="/assets/img/posts/2025-11-09-Transformer/Transformer.png" alt="一个重要的图表" width="70%" >
+</p>
+
+
 ## Creating a Site Repository
+$ \frac{a}{b},\\textcolor{red}{1}\quad x_i^2 $
+麦克斯韦方程组是一个更复杂的例子：
+
+$$
+\nabla \cdot \mathbf{E} = \frac{\rho}{\varepsilon_0} \\
+\nabla \cdot \mathbf{B} = 0 \\
+\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} \\
+\nabla \times \mathbf{B} = \mu_0 \left( \mathbf{J} + \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t} \right)
+$$
 
 When creating your site repository, you have two options depending on your needs:
 
@@ -133,7 +147,7 @@ For self-hosted servers, you will need to build the site on your local machine a
 
 Navigate to the root of the source project, and build your site with the following command:
 
-```console
+```python
 $ JEKYLL_ENV=production bundle exec jekyll b
 ```
 
