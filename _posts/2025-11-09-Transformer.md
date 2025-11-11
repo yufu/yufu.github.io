@@ -1,7 +1,6 @@
 ---
 title: Transformer 理解
 description: >-
-
 author: Yu Fu (付彧)
 date: 2025-11-09 19:23:00 +0800
 categories: [Tech, Deep Learning Algorithm]
